@@ -23,8 +23,6 @@ body {
   background-image: url(ressources/Frame\ 2\ \(21\).png);
   background-size: cover;
   max-width: 1300px;
-  /* remove this later */
-
   margin: 40px auto 0;
   display: flex;
   color: #333;
@@ -132,7 +130,6 @@ h1 span:nth-child(2) {
   grid-template: auto auto auto / repeat(4, 1fr);
   grid-gap: 30px;
   width: 100%;
-  /* Meilleur ui Sidebar */
   border-radius: 3px;
 }
 .mobile-title {
@@ -284,7 +281,6 @@ h1 span:nth-child(2) {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* RESPONSIVE CANVAS, look for it */
   height: 300px;
   position: relative;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -495,7 +491,6 @@ h1 span:nth-child(2) {
 
 .card-section {
   grid-area: 3 / 2 / 4 / 4;
-  /* TU PEUX REUNIR TOUTES LES RADIUS POUR EVITER DE TE REPETER */
   border-radius: 20px;
   background-image: repeating-linear-gradient(
       45deg,
