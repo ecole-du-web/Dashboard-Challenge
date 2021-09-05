@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidenav -->
+      <h1 class="mobile-title"><span>Your</span> Dashboard</h1>
+      <nav class="sidenav">
+        <div class="logo-container">
+          <img src="ressources/pie-chart.svg" alt="" />
+          <h1>
+            <span>HSBS</span>
+            <span>BANK</span>
+          </h1>
+        </div>
+        <a href="#">
+          <img src="ressources/dashboard.svg" alt="" />
+          <span>Dashboard</span>
+        </a>
+        <a href="#">
+          <img src="ressources/bank.svg" alt="" />
+          <span>Bank</span>
+        </a>
+        <a href="#">
+          <img src="ressources/home.svg" alt="" /> <span>Account</span>
+        </a>
+        <a href="#">
+          <img src="ressources/globe-solid.svg" alt="" /> <span>Services</span>
+        </a>
+        <button class="floating-btn">
+          <img src="ressources/doublearrow.png" alt="">
+        </button>
+      </nav>
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="monthly-bloc total-savings">
+          <p>
+            <span>Savings</span>
+
+            <span class="percentage-infos month-green-infos">+21%</span>
+          </p>
+          <!-- Effet span / pseudo elements -->
+          <span class="monthly-price-section">2167€</span>
+          <!-- Icone en fonction de l'argent -->
+          <img src="ressources/growth.svg" alt="growth" />
+        </div>
+        <div class="monthly-bloc monthly-expense">
+          <!-- <button class="three-dots-container">
+            <div class="more-dot"></div>
+            <div class="more-dot"></div>
+          </button> -->
+          <p>
+            <span>Month</span>
+            <span class="percentage-infos month-green-infos">+17%</span>
+          </p>
+          <span class="monthly-price-section">1256€</span>
+          <img src="ressources/growth.svg" alt="growth" />
+        </div>
+        <div class="monthly-bloc monthly-recurring">
+          <p>
+            <span>Recurring</span>
+            <span class="percentage-infos month-red-infos">-27%</span>
+          </p>
+          <span class="monthly-price-section">400€</span>
+          <img src="ressources/loss.svg" alt="loss" />
+        </div>
+
+        <div class="chart-container">
+          <!-- <button class="export-btn">
+            <img src="ressources/exportation.svg" alt="export icon">
+          </button> -->
+          <button class="three-dots-container">
+            <div class="more-dot"></div>
+            <div class="more-dot"></div>
+            <div class="more-dot"></div>
+          </button>
+          <h2>
+            Your Savings
+            <span class="percentage-infos month-green-infos">+21%</span>
+          </h2>
+          <div class="chart-box">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+
+        <div class="piecharts-section">
+          <button class="three-dots-container">
+            <div class="more-dot"></div>
+            <div class="more-dot"></div>
+            <div class="more-dot"></div>
+          </button>
+          <h2>Expenses</h2>
+          <div class="pie-box">
+            <canvas id="pieChart"></canvas>
+          </div>
+          <div class="pie-infos-container">
+            <div class="pie-infos">
+              <div class="rectangle red-rectangle"></div>
+              <span>Expenses</span>
+            </div>
+            <div class="pie-infos">
+              <div class="rectangle green-rectangle"></div>
+              <span>Savings</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="advisor-section">
+          <h2>Your Advisor</h2>
+
+          <p><img src="ressources/phone-call.svg" alt="" /> 145-124-578-598</p>
+          <p><img src="ressources/email.svg" alt="" /> johndoe@doe.com</p>
+          <img class="profile-adivsor" src="ressources/profile.jpg" alt="" />
+        </div>
+
+        <div class="card-section">
+          <div class="card-infos">
+            <h2>Your Card</h2>
+            <div class="card-infos-txt">
+              <div class="dot"></div>
+              <span>2017/03</span>
+            </div>
+            <div class="card-infos-txt">
+              <div class="dot"></div>
+              <span>MasterCard</span>
+            </div>
+            <div class="card-infos-txt">
+              <div class="dot"></div>
+              <span>Debit</span>
+            </div>
+            <button>
+              <img src="ressources/plus.svg" alt="" /> <span>ADD</span>
+            </button>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="top-card">
+                <p class="type-c">Debit Card</p>
+                <img src="ressources/mastercard.png" alt="" />
+              </div>
+              <p class="num-c">
+                <span>3566</span>
+                <span>0020</span>
+                <span>2036</span>
+                <span>0505</span>
+              </p>
+              <div class="bottom-card">
+                <p class="name-c">
+                  <span>JOHN DOE</span>
+                </p>
+                <p class="expires-c">
+                  <span>2024/02</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-livefeed">
+          <h2>Last changes</h2>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>-56 €</p>
+              <span>Groceries store</span>
+            </div>
+            <img src="ressources/decrease.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>-26 €</p>
+              <span>Oil</span>
+            </div>
+            <img src="ressources/decrease.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>+197 €</p>
+              <span>Cryptos</span>
+            </div>
+            <img src="ressources/increase.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>-25 €</p>
+              <span>Restaurant</span>
+            </div>
+            <img src="ressources/decrease.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>+56 €</p>
+              <span>Paypal</span>
+            </div>
+            <img src="ressources/increase.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>+85 €</p>
+              <span>Stripe</span>
+            </div>
+            <img src="ressources/increase.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>-16 €</p>
+              <span>Food</span>
+            </div>
+            <img src="ressources/decrease.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>-72 €</p>
+              <span>The Clothes Shop</span>
+            </div>
+            <img src="ressources/decrease.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>+1516 €</p>
+              <span>Salary</span>
+            </div>
+            <img src="ressources/increase.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p>-106 €</p>
+              <span>GPU Card</span>
+            </div>
+            <img src="ressources/decrease.svg" alt="" />
+          </div>
+
+          <a href="#">See All ...</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
